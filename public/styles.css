@@ -1,0 +1,88 @@
+body{
+    background-color: #152942;
+    font-size: 16px;
+    font-family: 'Averia Sans Libre', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Path: way-finder\public\styles.css */
+
+
+/* navbar */
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Roboto';
+}
+
+.navbar a{
+    color: #fff;
+}
+.navbar a:hover{
+    color: #20B573;
+}
+nav{
+    margin-top: 10px;
+}
+.logo{
+    padding-right : 20%;
+}
+
+
+.tagline img{
+    width: 100%;
+    height: 100%;
+    /* padding-top: 10%; */
+    
+}
+.tagline{
+    padding-top: 20px;
+    max-width: 100%;
+}
+.tagline .boxV1 img{
+    width:320px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.tagline .boxV2 img{
+    width:280px;
+    height: 290px;
+    margin-right: 10px;
+}
+.tagline .box img{
+    width:700px;
+    height: 190px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+ .buttonClass {
+    font-size: 20px;
+    font-family: 'Roboto';
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#fff;
+    border-color:#18ab29;
+    border-top-left-radius:28px;
+    border-top-right-radius:28px;
+    border-bottom-left-radius:28px;
+    border-bottom-right-radius:28px;
+    text-shadow: 1px 1px 0px #2f6627;
+    background:#44c767;
+  }
+  
+  .buttonClass:hover {
+    background: #5cbf2a
+  }
+         

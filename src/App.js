@@ -1,12 +1,13 @@
 import React from "react";
-
+import Nav from "./components/nav";
+import Tagline from "./components/tagline";
 
 function App() {
     return (
       <div>
-        <h1>
-          <span>emojipedia</span>
-        </h1>
+        <Nav />
+        <Tagline />
+        
       </div>
     );
   }
