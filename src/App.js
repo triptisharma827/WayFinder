@@ -3,11 +3,11 @@ import React, { Component } from "react";
 // Component Imports
 import Nav from "./components/nav";
 import Tagline from "./components/tagline";
-import Domains from "./components/domains";
-import Work from "./components/workPage";
-import Testimonial from "./components/testimonial";
-import newsletter from "./components/newsletter";
-import Footer from "./components/footer";
+// import Domains from "./components/domains";
+// import Work from "./components/workPage";
+// import Testimonial from "./components/testimonial";
+// import newsletter from "./components/newsletter";
+// import Footer from "./components/footer";
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
       <div>
         <Nav />
         <Tagline />
-        <Domains />
+        {/* <Domains />
         <Work />
         <Testimonial />
         <newsletter />
-        <Footer />
+        <Footer /> */}
         
       </div>
     );
