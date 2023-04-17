@@ -327,3 +327,85 @@ nav{
     color: white;
   }
   
+
+
+  /* for subscribe page  */
+
+  .newsletter-title{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 80px;
+  }
+  
+  .newsletter-image {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .newsletter-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .newsletter-form {
+    flex: 1;
+  }
+  
+  .form-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .form-column {
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0px ;
+    background-color: #344C66;
+    /* border-radius: 5px; */
+  }
+  
+  button[type="submit"] {
+    background-color: #20B573;
+    color: #fff;
+    border: none;
+    border-radius: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 200px;
+    font-size: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4cd497;
+  }
+  
+
+  /* footer */
+  .footer{
+    max-width: 100%;
+  }
+  .footer .center{
+    text-align: center;
+  }
+  .footer .right{
+    text-align: right;
+    font-style: italic;
+  }
+  .copyright{
+    text-align: center;
+    font-style: italic;
+  }

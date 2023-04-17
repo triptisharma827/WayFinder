@@ -6,8 +6,8 @@ import Tagline from "./components/taglinePage";
 import Domains from "./components/domains";
 import Work from "./components/about";
 import Testimonials from "./components/testimonial";
-// import newsletter from "./components/newsletter";
-// import Footer from "./components/footer";
+import Newsletter from "./components/newsletter";
+import Footer from "./components/footer";
 
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
         <Domains />
         <Work />
         <Testimonials />
+        <Newsletter />
+        <Footer />
         
       </div>
     );
