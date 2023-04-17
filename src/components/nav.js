@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "../images/logo.png";
-import logoNAme from "../images/logoName.png";
 
 
 function Nav() {
@@ -9,8 +7,8 @@ function Nav() {
             
             <ul className="navbar" type='none'>
                 <div className="logo">
-                <img src={logo} alt="logo" />
-                <img src={logoNAme} alt="logoNAme"/>
+                <img src="images/logo.png" alt="logo" />
+                <img src="images/logoName.png" alt="logoNAme"/>
                 </div>
                 <li>
                     <a href="/" className="nav-link">Home</a>

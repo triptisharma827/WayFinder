@@ -1,8 +1,5 @@
 import React from "react";
 import SuccessButton from "./button";
-import vector1 from "../images/vector1.png";
-import vector2 from "../images/vector2.png";
-import tagline from "../images/tagline.png";
 
 function Tagline() {
 
@@ -10,10 +7,10 @@ function Tagline() {
     
     <div className="container tagline">
       <div className="row">
-        <div className="boxV1 col-3"><img src={vector1} alt="vector1" /></div>
-        <div className="box col-6"><img src={tagline} alt="tagline" />
+        <div className="boxV1 col-3"><img src="images/vector1.png" alt="vector1" /></div>
+        <div className="box col-6"><img src="images/tagline.png" alt="tagline" />
         <SuccessButton  label="Get Started" />        </div>
-        <div className="boxV2 col-3"><img src={vector2} alt="vector2" /></div>
+        <div className="boxV2 col-3"><img src="images/vector2.png" alt="vector2" /></div>
       </div>
       <div className="row boxes">
         <div className="boxBlue col-3"><h2>Wide range of career opportunities</h2></div>
