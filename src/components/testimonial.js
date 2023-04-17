@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-// import { FaQuoteLeft } from 'react-icons/fa';
-// import testimonialData from './testimonialData';
 
 const testimonialData = [
   {
@@ -39,7 +37,7 @@ const Testimonials = () => {
   return (
     <div className="test-container">
       <div className="testimonial-heading">
-        <img src="images/clientsay.png" alt="logo name" height={"50px"} />
+        <img src="images/clientSay.png" alt="logo name" height={"50px"} />
         <p>
           we are connected with 10k+ students and working professionals who are
           using our platform to find career guidance and resources for their
