@@ -2,8 +2,8 @@ import React, { Component } from "react";
 
 // Component Imports
 import Nav from "./components/nav";
-import Tagline from "./components/tagline";
-// import Domains from "./components/domains";
+import Tagline from "./components/taglinePage";
+import Domains from "./components/domains";
 // import Work from "./components/workPage";
 // import Testimonial from "./components/testimonial";
 // import newsletter from "./components/newsletter";
@@ -15,8 +15,8 @@ function App() {
       <div>
         <Nav />
         <Tagline />
-        {/* <Domains />
-        <Work />
+        <Domains />
+        {/* <Work />
         <Testimonial />
         <newsletter />
         <Footer /> */}

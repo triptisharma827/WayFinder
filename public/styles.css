@@ -66,23 +66,82 @@ nav{
     margin-top: 20px;
 }
 
- .buttonClass {
-    font-size: 20px;
-    font-family: 'Roboto';
-    width:140px;
-    height:50px;
-    border-width:1px;
-    color:#fff;
-    border-color:#18ab29;
-    border-top-left-radius:28px;
-    border-top-right-radius:28px;
-    border-bottom-left-radius:28px;
-    border-bottom-right-radius:28px;
-    text-shadow: 1px 1px 0px #2f6627;
-    background:#44c767;
-  }
-  
-  .buttonClass:hover {
-    background: #5cbf2a
-  }
+
+/* for button  */
          
+  .btn{
+    background-color: #20B573;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 35px 250px;
+    }
+    .btn:hover{
+        background-color: #4cd497;
+        color: #fff;
+    }
+
+
+
+    /* boxes for features  */
+    .boxes{
+        max-width: fit-content;
+        margin-top:50px;
+    }
+
+    .boxes .boxBlue{
+        background-color: #344C66;
+        height: 150px;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .boxes .boxBlue h2{
+        margin-top: 5px;
+        font-size: 30px;
+        color: #fff;
+        font-family: 'Roboto';
+    }
+    .boxes .boxGreen{
+        background-color: #20B573;
+        height: 150px;
+        padding: 20px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .boxes .boxGreen h2{
+        margin-top: 5px;
+        font-size: 30px;
+        color: #fff;
+        font-family: 'Roboto';
+    }
+
+
+    /* domains page   */
+
+.domains{
+    margin-top: 200px;
+    background-color: #344C66;
+    max-width: 100%;
+}
+.domains .heading{
+    text-align: center;
+    color: #fff;
+    
+}
+.domains .heading h1{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Averia Sans Libre';
+}
+.domains .heading p{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Roboto';
+}
