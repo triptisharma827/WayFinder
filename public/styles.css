@@ -139,13 +139,81 @@ nav{
     color: #fff;
     font-family: 'Averia Sans Libre';
 }
-.domains .heading p{
+.domains .subheading{
     margin-top: 20px;
     font-size: 25px;
     color: #fff;
     font-family: 'Roboto';
-    margin-bottom: 550px;
 }
+
+.category-section{
+  max-width: 100%;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+
+}
+.popularCategory{
+  background-color: #344C66;
+  max-width: fit-content;
+  margin-right: 40px;
+  padding-bottom: 40px;
+
+}
+.popularCategory h2{
+  font-family: 'Roboto';
+  margin-top: 20px;
+  width: 400px;
+  font-size: 35px;
+  font-weight: 200;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.category{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-bottom: #fff solid 1px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+}
+
+.category h4 {
+  flex: 1;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.count {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #F4F7FC;
+  color: black;
+  font-size: 1rem;
+  margin-top: 20px;
+
+}
+.count:hover{
+  background-color: #20B573;
+}
+
+.collection{
+  background-color: #20B573;
+  /* max-width: fit-content; */
+}
+
+.collection-card{
+  background-color: #344C66;
+}
+
 
 
 
@@ -400,6 +468,7 @@ nav{
   }
   .footer .center{
     text-align: center;
+    font-style: italic;
   }
   .footer .right{
     text-align: right;
@@ -408,4 +477,14 @@ nav{
   .copyright{
     text-align: center;
     font-style: italic;
+  }
+  .social-icon {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+  }
+
+  .social{
+    margin-left: -20px; 
   }

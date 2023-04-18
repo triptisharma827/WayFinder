@@ -13,9 +13,9 @@ function Footer(){
             <div className="center col-md-4"><p>Find us on social media:
             </p>
             <div className="social">
-                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
+                <a href=""><img className="social-icon" src="images/facebook.png" /></a>
+                <a href=""><img className="social-icon" src="images/twitter.png" /></a>
+                <a href=""><img className="social-icon" src="images/insta.png" /></a>
             </div>
             </div>
             <div className="right col-md-4"><p style={{color:"#FAB438"}}>We're Always Happy To Help!</p>
