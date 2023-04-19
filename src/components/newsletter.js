@@ -14,58 +14,64 @@ const Newsletter = () => {
   };
 
   return (
-    <div>
-    <div className="newsletter-title">        <img src="images/subscribe.png" className="image-heading" height={"30px"} alt="subscribe" />
-</div>
-        <div className="newsletter-container">
-      <div className="newsletter-image">
-        <img src="images/pana.png" alt="Newsletter" width={"450px"} />
+    <div className="newsletter-box">
+      <div className="newsletter-title">
+        <img
+          src="images/subscribe.png"
+          className="image-heading"
+          height={"30px"}
+          alt="subscribe"
+        />
       </div>
-      <div className="newsletter-form">
-        <form onSubmit={handleSubmit}>
-          <div className="form-row">
-            <div className="form-column">
-              <input
-                type="text"
-                placeholder="First Name"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-              />
+      <div className="newsletter-container">
+        <div className="newsletter-image">
+          <img src="images/pana.png" alt="Newsletter" width={"450px"} />
+        </div>
+        <div className="newsletter-form">
+          <form onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-column">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                />
+              </div>
+              <div className="form-column">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                />
+              </div>
             </div>
-            <div className="form-column">
-              <input
-                type="text"
-                placeholder="Last Name"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-              />
+            <div className="form-row">
+              <div className="form-column">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
             </div>
-          </div>
-          <div className="form-row">
-            <div className="form-column">
-              <input
-                type="email"
-                placeholder="Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+            <div className="form-row">
+              <div className="form-column">
+                <textarea
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div className="form-row">
-            <div className="form-column">
-              <textarea
-                placeholder="Message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
+            <div className="form-row">
+              <button type="submit" >Subscribe</button>
             </div>
-          </div>
-          <div className="form-row">
-            <button type="submit">Subscribe</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

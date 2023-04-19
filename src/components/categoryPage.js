@@ -1,6 +1,7 @@
 import React from "react";
 import { popularCategory,collection } from "../DomainName";
 import Card from "./Card";
+import CardGroup from "./cardList";
 
 
 function CategoryPage() {
@@ -19,7 +20,7 @@ function CategoryPage() {
                     })}
                 </div>
                 <div className="collection col-6">
-                    <Card />
+                    <CardGroup />
 
                 </div>
         </div>

@@ -87,6 +87,10 @@ nav{
 
 
     /* boxes for features  */
+    .work-heading{
+        max-width: 100%;
+        margin-top: 150px;
+    }
     .boxes{
         max-width: fit-content;
         margin-top:50px;
@@ -124,8 +128,8 @@ nav{
     /* domains page   */
 
 .domains{
-    margin-top: 200px;
-    background-color: #20354A;
+    margin-top: 30px;
+    background-color: #152942;
     max-width: 100%;
 }
 .domains .heading{
@@ -148,17 +152,18 @@ nav{
 
 .category-section{
   max-width: 100%;
-  margin-bottom: 100px;
   margin-left: 40px;
   margin-right: 40px;
-
-
+  margin-top: 10px;
 }
 .popularCategory{
   background-color: #344C66;
   max-width: fit-content;
+  max-height: max-content;
   margin-right: 40px;
   padding-bottom: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
 
 }
 .popularCategory h2{
@@ -206,19 +211,53 @@ nav{
 }
 
 .collection{
-  background-color: #20B573;
-  /* max-width: fit-content; */
+  max-width: 900px;
+  margin-left: 50px;
+  margin-top: 45px;
 }
+
+
 
 .collection-card{
-  background-color: #344C66;
+  background-color: #344C66 ;
+  width: 320px;
+  height: 140px;
+  margin-top: 10px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.collection-card:hover{
+  background-color: #20B573;
+  cursor: pointer;
+
 }
 
+.card-icon{
+  height: 80px;
+  width: 80px;
+  margin-left: 20px;
+  background-color: #152942;
+  border-radius: 50%;
+
+}
+.card-name{
+  font-family: 'Roboto';
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 200;
+}
 
 
 
 /* how it works  */
-
+.work-section{
+  background-color: #20354A;
+}
 .work-heading img{
     margin-left: 50px;
     margin-top: 70px;
@@ -227,6 +266,7 @@ nav{
 .container-work {
     display: flex;
     align-items: flex-start;
+    
   }
   
   .container-work .boxes {
@@ -236,7 +276,7 @@ nav{
   }
   
   .box-work {
-    background-color: #20354a;
+    background-color: #152942;
     width: 600px;
     padding: 20px;
     margin-right: 20px;
@@ -287,6 +327,9 @@ nav{
     margin-left: 170px;
   }
   
+
+
+
 
 
   /* testimonial page  */
@@ -372,14 +415,14 @@ nav{
     font-size: 1.2rem;
   }
   
-  .carousel-navigation {
+  .testimonial-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
   }
   
-  button {
+  .test-btn {
     background-color: #344C66;
     color: #152942;
     border: none;
@@ -390,7 +433,7 @@ nav{
     transition: all 0.3s ease;
   }
   
-  button:hover {
+  .test-btn:hover {
     background-color: #152942;
     color: white;
   }
@@ -400,7 +443,7 @@ nav{
   /* for subscribe page  */
 
   .newsletter-title{
-    margin-top: 60px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
   }
@@ -461,8 +504,15 @@ nav{
     background-color: #4cd497;
   }
   
+  .newsletter-box{
+    margin-top: 50px;
+  }
 
   /* footer */
+  .footer-container{
+    margin-top: 50px;
+  }
+
   .footer{
     max-width: 100%;
   }
@@ -487,4 +537,128 @@ nav{
 
   .social{
     margin-left: -20px; 
+  }
+
+
+
+
+  /* resource section  */
+
+  .resource-section h1{
+    margin-top: 5%;
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Averia Sans Libre';
+    text-align: center;
+    margin-bottom: 1.5%;
+  }
+  .resource-form .search-bar{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .resource-form{
+    text-align: center;
+  }
+ .resource-form button{
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #20B573;
+  border: none;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-top: 20px;
+ }
+
+ .scroll-resource{
+  max-height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #20354A;
+  padding: 50px;
+ }
+ .main-page .heading{
+  display: flex;
+  flex-direction: row;
+ }
+ .vectorimgleft{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+ }
+ .main-page h1{
+  font-size: 50px;
+  color: #fff;
+  font-family: 'Averia Sans Libre';
+  text-align: center;
+  margin-left: 60px;
+ }
+  .vectorimgright{
+    width: 300px;
+    height: 300px;
+    margin-top: 90px;
+    margin-left: 60px;
+
+  }
+  .desc{
+    margin-left: 280px;
+    margin-top: -200px;
+    margin-bottom: 150px;
+  }
+
+  .techVector{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+
+
+  }
+  .techHeading{
+    height: 30px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+
+  .technology{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    
+  }
+  .third-page h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Averia Sans Libre';
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .blog-link h3{
+    font-size: 25px;
+    color: #20B573;
+    font-family: 'Averia Sans Libre';
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .blog-link li{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Averia Sans Libre';
+    text-align: center;
+    margin-bottom: 20px;
   }

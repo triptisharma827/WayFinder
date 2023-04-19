@@ -13,18 +13,27 @@ const popularCategory = [{
     count:"2K+"},
     ];
 
-const collection = [{
+const Collection = [{
     name:"FULL STACK DEVELOPER ",
-    icon:"images/facebook.png"},
+    icon:"images/iconfs.png"},
     {
     name:"ANDROID DEVELOPER",
-    icon:"images/facebook.png"},
+    icon:"images/iconfs.png"},
     {
     name:"SOFTWARE DEVELOPER",
-    icon:"images/facebook.png"},
+    icon:"images/iconfs.png"},
     {
     name:"ARTIFICIAL INTELLIGENCE",
-    icon:"images/facebook.png"},
+    icon:"images/iconfs.png"},
+    {
+    name:"DATA SCIENCE",
+    icon:"images/iconfs.png"},
+    {
+        name:"CYBER SECURITY",
+        icon:"images/iconfs.png"}
+    
     ];
 
-export {popularCategory,collection};
+export default Collection;
+
+export {popularCategory};

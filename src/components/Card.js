@@ -1,13 +1,16 @@
 import React from "react";
 // import { collection } from "../DomainName";
 
+
 function Card(props) {
+    function copyText(){
+        navigator.clipboard.writeText(props.name);
+        alert("Copied!!");
+    }
     return (
-        <div className="card-group">
-            <div className="collection-card">
-                <img src={props.icon} alt="icon" />
-                <h4>{props.name}</h4>
-            </div>
+        <div className="collection-card">
+                <img className="card-icon" src={props.icon} alt="icon" />
+                <h4 className="card-name" onClick={copyText}>{props.name}</h4>
         </div>
     );
     }

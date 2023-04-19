@@ -58,9 +58,9 @@ const Testimonials = () => {
             <p className="comment">{currentTestimonial.comment}</p></div>
           </div>
         </div>
-        <div className="carousel-navigation">
-          <button onClick={handlePrev}>Prev</button>
-          <button onClick={handleNext}>Next</button>
+        <div className="testimonial-nav carousel-navigation">
+          <button className="test-btn" onClick={handlePrev}>Prev</button>
+          <button className="test-btn" onClick={handleNext}>Next</button>
         </div>
       </div>
     </div>

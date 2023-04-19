@@ -8,6 +8,8 @@ import Work from "./components/about";
 import Testimonials from "./components/testimonial";
 import Newsletter from "./components/newsletter";
 import Footer from "./components/footer";
+import Resource from "./components/resource";
+
 
 
 function App() {
@@ -15,8 +17,9 @@ function App() {
       <div>
         <Nav />
         <Tagline />
-        <Domains />
         <Work />
+        <Domains />
+        <Resource />
         <Testimonials />
         <Newsletter />
         <Footer />
