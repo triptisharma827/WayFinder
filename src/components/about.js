@@ -42,6 +42,7 @@ const Box = ({ icon, heading, description }) => {
 
 function About() {
   return (
+    <section id="about">
     <div className="work-section">
       <div className="work-heading">
         <img src="images/howitwork.png" alt="logo name" height={"50px"}  />
@@ -50,6 +51,7 @@ function About() {
     
            
     </div>
+    </section>
   );
 }
 

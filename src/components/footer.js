@@ -1,7 +1,9 @@
 import React from "react";
 
 function Footer(){
-    return (<div>
+    return (
+        <section id="footer">
+            <div>
         
         <div className="footer container">
             <div className="row">
@@ -10,16 +12,16 @@ function Footer(){
                     <img src="images/logoName.png" alt="logoNAme"/>
             </div>
             </div>
-            <div className="center col-md-4"><p>Find us on social media:
+            <div className="center col-md-4"><p>Find me on social media:
             </p>
             <div className="social">
-                <a href=""><img className="social-icon" src="images/facebook.png" /></a>
-                <a href=""><img className="social-icon" src="images/twitter.png" /></a>
-                <a href=""><img className="social-icon" src="images/insta.png" /></a>
+                <a href="https://www.linkedin.com/in/tripti--sharma/" target="blank"><img className="social-icon" src="images/linkedin.png" /></a>
+                <a href="https://linktr.ee/triptisharmaa" target="blank"><img className="social-icon" src="images/linktree.png" /></a>
+                <a href="https://github.com/triptisharma827" target="blank"><img className="social-icon" src="images/github-logo.png" /></a>
             </div>
             </div>
-            <div className="right col-md-4"><p style={{color:"#FAB438"}}>We're Always Happy To Help!</p>
-            <p>support@gmail.com</p>
+            <div className="right col-md-4"><p style={{color:"#FAB438"}}>I'm Always Happy To Help!</p>
+            <p>triptisharma827@gmail.com</p>
             </div>
             </div>
         </div>
@@ -28,7 +30,9 @@ function Footer(){
             <p className="copyright">Copyright © 2023 Tripti Sharma</p>
         </div>
 
-    </div>)
+    </div>
+        </section>
+    )
 }
 
 

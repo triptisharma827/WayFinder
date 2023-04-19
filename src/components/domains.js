@@ -4,7 +4,8 @@ import CategoryPage from "./categoryPage";
 
 function Domains() {
   return (
-    <div>
+    <section id="careers">
+      <div>
     <div className="container domains">
       <div className="row heading">
         <div className="col-12">
@@ -24,6 +25,7 @@ function Domains() {
     
     
     </div>
+    </section>
   );
 }
 

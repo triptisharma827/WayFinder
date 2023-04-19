@@ -35,7 +35,8 @@ const Testimonials = () => {
   const currentTestimonial = testimonialData[activeIndex];
 
   return (
-    <div className="test-container">
+    <section id="testimonials">
+      <div className="test-container">
       <div className="testimonial-heading">
         <img src="images/clientSay.png" alt="logo name" height={"40px"} />
         <p>
@@ -64,6 +65,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

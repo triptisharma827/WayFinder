@@ -232,7 +232,8 @@ function Resource() {
   }
 
   return (
-    <div className="resource-section">
+    <section id="resource">
+      <div className="resource-section">
       <h1>Domain Analysis</h1>
       <div className="resource-form">
         <form>
@@ -244,7 +245,7 @@ function Resource() {
             onChange={changehandler}
           />
           <button type="submit" onClick={submitAction}>
-            Submit
+            Search
           </button>
         </form>
       </div>
@@ -341,6 +342,7 @@ function Resource() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

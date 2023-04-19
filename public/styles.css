@@ -600,10 +600,11 @@ nav{
  }
  .main-page h1{
   font-size: 50px;
-  color: #fff;
+  color: #4cd497;
   font-family: 'Averia Sans Libre';
   text-align: center;
   margin-left: 60px;
+
  }
   .vectorimgright{
     width: 300px;
@@ -616,6 +617,9 @@ nav{
     margin-left: 280px;
     margin-top: -200px;
     margin-bottom: 150px;
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-family: 'Averia Sans Libre';
   }
 
   .techVector{

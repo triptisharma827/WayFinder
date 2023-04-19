@@ -7,14 +7,10 @@ const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Submitted");
-    // Here you can implement the code to submit the form data to your server
-  };
 
   return (
-    <div className="newsletter-box">
+    <section id="newsletter">
+      <div className="newsletter-box">
       <div className="newsletter-title">
         <img
           src="images/subscribe.png"
@@ -28,7 +24,7 @@ const Newsletter = () => {
           <img src="images/pana.png" alt="Newsletter" width={"450px"} />
         </div>
         <div className="newsletter-form">
-          <form onSubmit={handleSubmit}>
+          <form action="https://formsubmit.co/triptisharma827@gmail.com" method="POST">
             <div className="form-row">
               <div className="form-column">
                 <input
@@ -67,12 +63,13 @@ const Newsletter = () => {
               </div>
             </div>
             <div className="form-row">
-              <button type="submit" >Subscribe</button>
+              <button type="submit"  >Subscribe</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
