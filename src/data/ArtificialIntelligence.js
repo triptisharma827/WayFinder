@@ -5,8 +5,8 @@ const ArtificialIntelligence={
 title: "ARTIFICIAL INTELLIGENCE",
 
     highlights: {
-        item1: "Scope : Increasing 40% every year (Acc. to linkedin report)",
-        item2: "Salary : 6-8 LPA",
+        item1: "Scope : Increasing 50% every year (Acc. to linkedin report)",
+        item2: "Salary : 20-25 LPA",
         item3: "More info : (refer to the articles) click here"
     },
 

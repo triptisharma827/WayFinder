@@ -14,7 +14,7 @@ const popularCategory = [{
     ];
 
 const Collection = [{
-    name:"FULL STACK DEVELOPER ",
+    name:"FULL STACK DEVELOPER",
     icon:"images/iconfs.png"},
     {
     name:"ANDROID DEVELOPER",

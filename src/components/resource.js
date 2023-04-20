@@ -252,7 +252,7 @@ function Resource() {
       <div className="scroll-resource">
         <div className="main-page">
           <div className="heading"><img src={state.titleImage1} alt="vector1" className="vectorimgleft" />
-          <h1 className="vectorimgcenter">{state.title}</h1>
+          <div  className="vectorimgcenter"><h1>{state.title}</h1></div>
           <img
             src={state.titleImage2}
             alt="vector2"
@@ -318,7 +318,7 @@ function Resource() {
           <div className="row blog-link">
             <div className="col-6">
               <h3>Blog Links</h3>
-              <ul type="none">
+              <ul className="list" type="none">
                 <li><a href={state.blogs.blog1} target="blank">{state.blogs.blog1}</a></li>
                 <li><a href={state.blogs.blog2} target="blank">{state.blogs.blog2}</a></li>
                 <li><a href={state.blogs.blog3} target="blank">{state.blogs.blog3}</a></li>
@@ -329,7 +329,7 @@ function Resource() {
             </div>
             <div className="col-6">
               <h3>Tutorials</h3>
-              <ul type="none">
+              <ul className="list" type="none">
                 <li><a href={state.tutorials.link1} target="blank">{state.tutorials.tutorial1}</a></li>
                 <li><a href={state.tutorials.link2} target="blank">{state.tutorials.tutorial2}</a></li>
                 <li><a href={state.tutorials.link3} target="blank">{state.tutorials.tutorial3}</a></li>

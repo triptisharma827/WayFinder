@@ -5,8 +5,8 @@ const AndroidDeveloper={
     title: "ANDROID DEVELOPER",
 
     highlights: {
-        item1: "Scope : Increasing 40% every year (Acc. to linkedin report)",
-        item2: "Salary : 6-8 LPA",
+        item1: "Scope : Increasing 60% every year (Acc. to linkedin report)",
+        item2: "Salary : 15-20 LPA",
         item3: "More info : (refer to the articles) click here"
     },
 

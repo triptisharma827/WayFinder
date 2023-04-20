@@ -7,7 +7,9 @@ body{
     margin: 0;
     padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Path: way-finder\public\styles.css */
 
 
@@ -592,6 +594,7 @@ nav{
  .main-page .heading{
   display: flex;
   flex-direction: row;
+  
  }
  .vectorimgleft{
   width: 200px;
@@ -606,18 +609,21 @@ nav{
   margin-left: 60px;
 
  }
+ .vectorimgcenter{
+  width: 70%;
+ }
   .vectorimgright{
     width: 300px;
     height: 300px;
     margin-top: 90px;
-    margin-left: 60px;
+    /* margin-left: 30%; */
 
   }
   .desc{
     margin-left: 280px;
     margin-top: -200px;
     margin-bottom: 150px;
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'Roboto';
     font-family: 'Averia Sans Libre';
   }
@@ -626,7 +632,7 @@ nav{
     width: 300px;
     height: 300px;
     float: right;
-    margin-right: 250px;
+    margin-right: 40px;
     margin-top: 200px;
     margin-bottom: 100px;
 
@@ -643,6 +649,13 @@ nav{
     flex-direction: row;
     margin-top: 30px;
     
+  }
+  .technology h2{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: 'Roboto';
+
   }
   .third-page h1{
     font-size: 40px;
@@ -665,4 +678,12 @@ nav{
     font-family: 'Averia Sans Libre';
     text-align: center;
     margin-bottom: 20px;
+    
+  }
+  .list a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .list a:hover{
+    color: #20B573;
   }

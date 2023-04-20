@@ -2,11 +2,11 @@ const FullStackDeveloper = {
     titleImage1: "images/cuate.png",
     titleImage2: "images/amico.png",
 
-    title: "Full Stack Web Development",
+    title: "FULL STACK DEVELOPER",
 
     highlights: {
-        item1: "Scope : Increasing 40% every year (Acc. to linkedin report)",
-        item2: "Salary : 6-8 LPA",
+        item1: "Scope : Increasing 70% every year (Acc. to linkedin report)",
+        item2: "Salary : 30-40 LPA",
         item3: "More info : (refer to the articles) click here"
     },
 
