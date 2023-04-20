@@ -319,23 +319,23 @@ function Resource() {
             <div className="col-6">
               <h3>Blog Links</h3>
               <ul type="none">
-                <li>{state.blogs.blog1}</li>
-                <li>{state.blogs.blog2}</li>
-                <li>{state.blogs.blog3}</li>
-                <li>{state.blogs.blog4}</li>
-                <li>{state.blogs.blog5}</li>
-                <li>{state.blogs.blog6}</li>
+                <li><a href={state.blogs.blog1} target="blank">{state.blogs.blog1}</a></li>
+                <li><a href={state.blogs.blog2} target="blank">{state.blogs.blog2}</a></li>
+                <li><a href={state.blogs.blog3} target="blank">{state.blogs.blog3}</a></li>
+                <li><a href={state.blogs.blog4} target="blank">{state.blogs.blog4}</a></li>
+                <li><a href={state.blogs.blog5} target="blank">{state.blogs.blog5}</a></li>
+                <li><a href={state.blogs.blog6} target="blank">{state.blogs.blog6}</a></li>
               </ul>
             </div>
             <div className="col-6">
               <h3>Tutorials</h3>
               <ul type="none">
-                <li>{state.tutorials.tutorial1}</li>
-                <li>{state.tutorials.tutorial2}</li>
-                <li>{state.tutorials.tutorial3}</li>
-                <li>{state.tutorials.tutorial4}</li>
-                <li>{state.tutorials.tutorial5}</li>
-                <li>{state.tutorials.tutorial6}</li>
+                <li><a href={state.tutorials.link1} target="blank">{state.tutorials.tutorial1}</a></li>
+                <li><a href={state.tutorials.link2} target="blank">{state.tutorials.tutorial2}</a></li>
+                <li><a href={state.tutorials.link3} target="blank">{state.tutorials.tutorial3}</a></li>
+                <li><a href={state.tutorials.link4} target="blank">{state.tutorials.tutorial4}</a></li>
+                <li><a href={state.tutorials.link5} target="blank">{state.tutorials.tutorial5}</a></li>
+                <li><a href={state.tutorials.link6} target="blank">{state.tutorials.tutorial6}</a></li>
               </ul>
             </div>
           </div>
