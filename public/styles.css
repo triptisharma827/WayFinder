@@ -562,6 +562,7 @@ nav{
     border-radius: 40px;
     text-align: center;
     margin-top: 20px;
+    color: #fff;
   }
   .resource-form{
     text-align: center;
@@ -574,13 +575,15 @@ nav{
   margin-left: auto;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #20B573;
+  background-color: #738d81;
   border: none;
   color: #fff;
   margin-bottom: 50px;
   margin-top: 20px;
  }
-
+ .resource-form button:hover{
+  background-color: #20B573;
+ }
  .scroll-resource{
   max-height: 600px;
   overflow-y: scroll;
