@@ -22,7 +22,7 @@ const AndroidDeveloper={
         text3: "Flutter",
         tech4: "images/icons/firebase.png",
         text4: "Firebase",
-        tech5: "images/icons/Rxjava.png",
+        tech5: "images/icons/RxJava.png",
         text5: "RxJava",
         tech6: "images/icons/jetpack.png",
         text6: "Android Jetpack"
