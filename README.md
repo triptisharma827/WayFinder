@@ -21,7 +21,7 @@ The Way Finder application was built using the following technologies:
 
 - HTML, CSS, JavaScript, Bootstrap , Figma  and ReactJs for UI designing and front end Development
 - Vercel for hosting the application
-- Figma Link ->
+- Check out the UI: <a href="https://www.figma.com/file/ySXwieALv3fIHmV7h4KoSZ/project?node-id=0%3A1&t=FmUBusqwVNrq20KY-1">Figma Design</a>
 - Live Project ->https://way-finder.vercel.app/
 
 ## Usage
