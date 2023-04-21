@@ -5,7 +5,7 @@ import React from "react";
 function Card(props) {
     function copyText(){
         navigator.clipboard.writeText(props.name);
-        alert("Copied!!");
+        alert("Copied!! Paste the same in the search bar below.");
     }
     return (
         <div className="collection-card">
