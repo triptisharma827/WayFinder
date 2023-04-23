@@ -12,8 +12,6 @@ The Way Finder application has the following features:
 - Interactive user interface
 - Search bar for inputting domain names
 - Options for exploring various Tech Domains
-- Display of optimal route based on selected options
-- Estimated travel time and distance for selected route
 
 ## Technologies Used
 
