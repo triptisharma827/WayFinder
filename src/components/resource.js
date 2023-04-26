@@ -1,49 +1,44 @@
-import React, { useState } from "react";
-import FullStackDeveloper from "../data/FullStackDeveloper";
-import SoftwareDeveloper from "../data/SoftwareDeveloper";
-import ArtificialIntelligence from "../data/ArtificialIntelligence";
-import CyberSecurity from "../data/CyberSecurity";
-import DataScience from "../data/DataScience";
-import AndroidDeveloper from "../data/AndroidDeveloper";
-
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 
 function Resource() {
   const [name, setName] = useState("");
-  const [state, setState] = useState(FullStackDeveloper);
-  const [divState, setdivState] = useState("");
-
+  const [title, setTitle] = useState("");
+  const [highlights, setHighlights] = useState(['','','']);
+  const [techStack, setTechStack] = useState([['',''],['',''],['',''],['',''],['',''],['','']]);
+  const [blogger, setBlogger] = useState(['','','','','','']);
+  const [tutorial, setTutorial] = useState([['',''],['',''],['',''],['',''],['',''],['','']]);
+  
   function changehandler(e) {
     setName(e.target.value);
   }
-
+  async function getdata(a){
+   await axios.post("https://drab-blue-salamander-wear.cyclic.app/", {
+        title: a,
+      })
+      .then((response) => {
+        if(response.data[0]._id!="error")
+        {
+          setTitle(response.data[0]._id);
+          setHighlights(response.data[0].highlights);
+          setTechStack(response.data[0].techStack);
+          setBlogger(response.data[0].blogs);
+          setTutorial(response.data[0].tutorials);
+        }
+        else alert("error");
+        
+      });
+  }
+  
   function submitAction(e) {
     e.preventDefault();
-    console.log({ name });
-    setdivState(name);
-    switch (divState) {
-      case "FULL STACK DEVELOPER":
-        setState(FullStackDeveloper);
-        break;
-      case "SOFTWARE DEVELOPER":
-        setState(SoftwareDeveloper);
-        break;
-      case "ARTIFICIAL INTELLIGENCE":
-        setState(ArtificialIntelligence);
-        break;
-      case "CYBER SECURITY":
-        setState(CyberSecurity);
-        break;
-      case "DATA SCIENCE":
-        setState(DataScience);
-        break;
-      case "ANDROID DEVELOPER":
-        setState(AndroidDeveloper);
-        break;
-    }
+    getdata(name);
   }
-
+  useEffect(() => {
+    getdata("ANDROID DEVELOPER");
+  }, []);
   return (
-    <section id="resource">
+    <section id="resource" >
       <div className="resource-section">
       <h1>Domain Analysis</h1>
       <div className="resource-form">
@@ -62,17 +57,17 @@ function Resource() {
       </div>
       <div className="scroll-resource">
         <div className="main-page">
-          <div className="heading"><img src={state.titleImage1} alt="vector1" className="vectorimgleft" />
-          <div  className="vectorimgcenter"><h1>{state.title}</h1></div>
+          <div className="heading"><img src="images/cuate.png" alt="vector1" className="vectorimgleft" />
+          <div  className="vectorimgcenter"><h1>{title}</h1></div>
           <img
-            src={state.titleImage2}
+            src="images/amico.png"
             alt="vector2"
             className="vectorimgright"
           /></div>
           <ul type="none" className="desc">
-            <li>{state.highlights.item1}</li>
-            <li>{state.highlights.item2}</li>
-            <li>{state.highlights.item3}</li>
+            <li>Scope : Increasing {highlights[0]} every year (Acc. to linkedin report)</li>
+            <li>Salary : {highlights[1]} LPA</li>
+            <li>More info : (refer to the articles)<a  href={highlights[2]} target='blank'> click here </a></li>
           </ul>
           
           <div className="row boxes">
@@ -92,34 +87,34 @@ function Resource() {
         </div>
         <div className="second-page">
         
-          <img src={state.titleImage4} alt="techStack" className="techHeading" />
-          <img src={state.titleImage3} className="techVector" alt="..."></img>
+          <img src= "images/techStack.png" alt="techStack" className="techHeading" />
+          <img src="images/bro.png"  className="techVector" alt="..."></img>
           <div className="row tech">
             <div className="col-4 technology">
-              <img src={state.techStack.tech1} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text1}</h2>
+              <img src={techStack[0][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[0][1]}</h2>
             </div>
             <div className="col-4 technology">
-              <img src={state.techStack.tech2} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text2}</h2>
+            <img src={techStack[1][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[1][1]}</h2>
             </div>
             <div className="col-4 technology">
-              <img src={state.techStack.tech3} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text3}</h2>
+            <img src={techStack[2][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[2][1]}</h2>
             </div>
           </div>
           <div className="row">
           <div className="col-4 technology">
-              <img src={state.techStack.tech4} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text4}</h2>
+          <img src={techStack[3][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[3][1]}</h2>
             </div>
             <div className="col-4 technology">
-              <img src={state.techStack.tech5} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text5}</h2>
+            <img src={techStack[4][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[4][1]}</h2>
             </div>
             <div className="col-4 technology">
-              <img src={state.techStack.tech6} alt="..." height={"50px"} width={"50px"} />
-              <h2>{state.techStack.text6}</h2>
+            <img src={techStack[5][0]} alt="..." height={"50px"} width={"50px"} />
+              <h2>{techStack[5][1]}</h2>
             </div>
           </div>
           
@@ -130,23 +125,23 @@ function Resource() {
             <div className="col-6">
               <h3>Blog Links</h3>
               <ul className="list" type="none">
-                <li><a href={state.blogs.blog1} target="blank">{state.blogs.blog1}</a></li>
-                <li><a href={state.blogs.blog2} target="blank">{state.blogs.blog2}</a></li>
-                <li><a href={state.blogs.blog3} target="blank">{state.blogs.blog3}</a></li>
-                <li><a href={state.blogs.blog4} target="blank">{state.blogs.blog4}</a></li>
-                <li><a href={state.blogs.blog5} target="blank">{state.blogs.blog5}</a></li>
-                <li><a href={state.blogs.blog6} target="blank">{state.blogs.blog6}</a></li>
+              <li><a href={blogger[0]} target="blank">{blogger[0]}</a></li>
+              <li><a href={blogger[1]} target="blank">{blogger[1]}</a></li>
+              <li><a href={blogger[2]} target="blank">{blogger[2]}</a></li>
+              <li><a href={blogger[3]} target="blank">{blogger[3]}</a></li>
+              <li><a href={blogger[4]} target="blank">{blogger[4]}</a></li>
+              <li><a href={blogger[5]} target="blank">{blogger[5]}</a></li>
               </ul>
             </div>
             <div className="col-6">
               <h3>Tutorials</h3>
               <ul className="list" type="none">
-                <li><a href={state.tutorials.link1} target="blank">{state.tutorials.tutorial1}</a></li>
-                <li><a href={state.tutorials.link2} target="blank">{state.tutorials.tutorial2}</a></li>
-                <li><a href={state.tutorials.link3} target="blank">{state.tutorials.tutorial3}</a></li>
-                <li><a href={state.tutorials.link4} target="blank">{state.tutorials.tutorial4}</a></li>
-                <li><a href={state.tutorials.link5} target="blank">{state.tutorials.tutorial5}</a></li>
-                <li><a href={state.tutorials.link6} target="blank">{state.tutorials.tutorial6}</a></li>
+                <li><a href={tutorial[0][1]} target="blank">{tutorial[0][0]}</a></li>
+                <li><a href={tutorial[1][1]} target="blank">{tutorial[1][0]}</a></li>
+                <li><a href={tutorial[2][1]} target="blank">{tutorial[2][0]}</a></li>
+                <li><a href={tutorial[3][1]} target="blank">{tutorial[3][0]}</a></li>
+                <li><a href={tutorial[4][1]} target="blank">{tutorial[4][0]}</a></li>
+                <li><a href={tutorial[5][1]} target="blank">{tutorial[5][0]}</a></li>
               </ul>
             </div>
           </div>
