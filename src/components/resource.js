@@ -67,7 +67,7 @@ function Resource() {
           <ul type="none" className="desc">
             <li>Scope : Increasing {highlights[0]} every year (Acc. to linkedin report)</li>
             <li>Salary : {highlights[1]} LPA</li>
-            <li>More info : (refer to the articles)<a  href={highlights[2]} target='blank'> click here </a></li>
+            <li>More info : (refer to the linked video)<a  href={highlights[2]} target='blank'> click here </a></li>
           </ul>
           
           <div className="row boxes">
