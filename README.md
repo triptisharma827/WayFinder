@@ -1,6 +1,6 @@
 # Way Finder Web Application
 
-This is a web application called "Way Finder" that helps users to find the best roadmap, resources and analysis to your desired Tech Domain . The application is hosted on Vercel and can be accessed through the following link: https://way-finder.vercel.app/ and Backend that is developed with NodeJs, ExpressJs and MongoDb is hosted on cyclic through the following link: https://drab-blue-salamander-wear.cyclic.app/  .
+This is a web application called "Way Finder" that helps users to find the best roadmap, resources and analysis to your desired Tech Domain . The application is hosted on Vercel and can be accessed through the following link: https://way-finder.vercel.app/ and Backend that is developed with NodeJs, ExpressJs and MongoDb is hosted on cyclic.
 
 ![image](https://user-images.githubusercontent.com/71861450/233699621-7f70c7d0-791f-4862-80b4-3f190fb2e6af.png)
 
