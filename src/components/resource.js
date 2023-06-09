@@ -13,7 +13,7 @@ function Resource() {
     setName(e.target.value);
   }
   async function getdata(a){
-   await axios.post("https://drab-blue-salamander-wear.cyclic.app/", {
+   await axios.post("https://way-finder-api.vercel.app/", {
         title: a,
       })
       .then((response) => {
